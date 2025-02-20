@@ -1,0 +1,93 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.create-button {
+  background-color: #fd0509;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.task-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 16px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.task-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid red;  
+  padding: 12px;
+  border-radius: 2px;
+  background-color: #f9f9f9;
+  min-height: 100px;
+  text-align: center;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.modal-input {
+  width: 100%;
+  margin-bottom: 10px; 
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-cancel {
+  background-color: #30b92e; /* Màu xanh */
+  color: white;
+}
+
+.modal-create {
+  background-color: #fd0509; /* Màu đỏ */
+  color: white;
+}
+
+
+.create-button:active,
+.modal-cancel:active,
+.modal-create:active {
+    background-color: #800080; /* Màu tím */
+}
